@@ -29,4 +29,6 @@ A full-stack To-Do List application built using **React.js** for the frontend an
 ---
 
 ## 📦 Project Structure
+![image](https://github.com/user-attachments/assets/9dcf0eb6-cf51-4a33-b6f3-cba2aa9fb084)
+
 
