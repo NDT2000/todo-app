@@ -1,15 +1,13 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors  = require('cors');
-const todoRoutes = require('./routes/todoRoutes');
+const todoRoutes = require('./routes/todos');
 
 const app = express();
 const port = 5000;
 
-mongoose.connect('mongodb://localhost:27017/todoApp', {
-    newUrlParser: true,
-    useUnifiedTopology: true,
-}).then(() => console.log('MongoDB connected'))
+mongoose.connect('mongodb://127.0.0.1:27017/todoapp')
+.then(() => console.log('MongoDB connected'))
 .catch(err => console.log(err));
 
 app.use(cors());
